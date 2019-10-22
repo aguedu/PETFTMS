@@ -43,5 +43,11 @@ namespace PETFTMS.INF
             set { gia = value; }
         }
 
+        string tenKhachHang;
+        public string TenKhachHang
+        {
+            get { return tenKhachHang; }
+            set { tenKhachHang = value; }
+        }
     }
 }

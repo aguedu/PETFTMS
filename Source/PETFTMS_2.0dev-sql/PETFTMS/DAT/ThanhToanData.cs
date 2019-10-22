@@ -23,7 +23,7 @@ namespace PETFTMS.DAT
             }
             dieuKien = dieuKien.Substring(0, dieuKien.Length - 4); // trừ " 0R " cuối cùng;
             // Kết thúc xử lý điều kiện tìm kiếm
-            string sql = "SELECT K.MAKHOA, K.TENKHOA, K.LOAI, P.TENPET, K.DONGIA FROM KHOAHOC K INNER JOIN PET P ON K.MAPET = P.MAPET WHERE "+dieuKien;
+            string sql = "SELECT K.MAKHOA, K.TENKHOA, K.LOAI, P.TENPET, K.DONGIA, KH.TENKHACH FROM KHOAHOC K INNER JOIN PET P ON K.MAPET = P.MAPET INNER JOIN KHACHHANG KH ON P.MAKHACH = KH.MAKHACH WHERE "+dieuKien;
             DataTable dt = data.QuerySQL(sql);
             if (dt.Rows.Count > 0)
             {
@@ -36,6 +36,7 @@ namespace PETFTMS.DAT
                     thanhToan.Loai = r.Field<string>("LOAI");
                     thanhToan.TenHocVien = r.Field<string>("TENPET");
                     thanhToan.Gia = r.Field<double>("DONGIA");
+                    thanhToan.TenKhachHang = r.Field<string>("TENKHACH");
                     lstThanhToan.Add(thanhToan);
                 }
                 return lstThanhToan;

@@ -26,7 +26,7 @@ namespace PETFTMS.GUI
         public void ViewList(List<string> lstMaKhoa)
         {
             ReportDocument reportDocument = new ReportDocument();
-            reportDocument.Load(@"Z:\Private\Code\VS\LTQL\PETFTMS\PETFTMS_2.0dev-sql\PETFTMS\CrystalReport1.rpt");
+            reportDocument.Load(@"CrystalReport1.rpt");
             reportDocument.SetDataSource(thanhToanBus.getDataSourceFromList(lstMaKhoa));
             crystalReportViewer1.ReportSource = reportDocument;
             crystalReportViewer1.RefreshReport();
