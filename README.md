@@ -1,4 +1,4 @@
-# PETFTMS
+# PETFTMS - PET Friendly Training Management System
 ![PETFTMS](https://github.com/aguedu/PETFTMS/raw/refs/heads/master/Source/PETFTMS_2.0dev-sql/PETFTMS/Icons/PETFTMS.ico)
 
 PETFTMS là tên viết tắt cho cụm từ **PET Friendly Training Management System** một phần mềm sử dụng cho trung tâm huấn luyện thú nuôi
