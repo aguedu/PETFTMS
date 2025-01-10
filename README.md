@@ -35,6 +35,7 @@ Mã nguồn chính của phần mềm được thiết kế theo kiến trúc ph
 Nguyễn Hoàng Anh Khoa
 
 ## Thông tin kỹ thuật
-* Ngôn ngữ: C# (c sharp), SQL
+* Ngôn ngữ: C#, SQL
 * Công nghệ: Windows Forms
+* Kiến trúc: MVC
 * Thời điểm thực hiện: tháng 10 năm 2019
